@@ -3,8 +3,8 @@ var express = require('express')
     , util = require('util')
     , VkStrategy = require('passport-vkontakte').Strategy;
 
-var VK_APP_ID = '5759141';//process.env.VK_APP_ID;
-var VK_APP_SECRET = 'kZIz8p62MfBIOUbhfCTd';//process.env.VK_APP_SECRET;
+var VK_APP_ID = '5759220'; //process.env.VK_APP_ID;
+var VK_APP_SECRET = 'E6vFo4wf6Psji0T2BWeA'; //process.env.VK_APP_SECRET;
 
 if (!VK_APP_ID || !VK_APP_SECRET) {
     throw new Error('Set VK_APP_ID and VK_APP_SECRET env vars to run the example');
@@ -35,7 +35,7 @@ passport.use(new VkStrategy(
     {
         clientID: VK_APP_ID,
         clientSecret: VK_APP_SECRET,
-        callbackURL: "http://localhost:3000/auth/vk/callback",
+        callbackURL: "http://gastroprocto.ru:3000/auth/vk/callback",
         scope: ['email'],
         profileFields: ['email'],
     },
@@ -74,7 +74,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/account', ensureAuthenticated, function(req, res){
-    res.render('account', { user: req.user });
+    var data = {};
+    data.title = "My First APP";
+    data.arr=[{x:1, y:1}, {x:2, y:2}, {x:3, y:4}];
+
+    res.render('account', { user: req.user, data: data });
 });
 
 app.get('/login', function(req, res){

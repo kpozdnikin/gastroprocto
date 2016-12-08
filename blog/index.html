@@ -21,344 +21,131 @@
     <link rel="icon" type="image/png" href="/images/android-icon-192x192.png" sizes="192x192">
     <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="/images/manifest.json">
+    <!--<link rel="manifest" href="/images/manifest.json">-->
 
     <!-- Site Properties -->
-    <title>Sticky Example - Semantic</title>
-
+    <title>Блог БолитЖивот.рф. о здоровье пищеварительной системы.</title>
     <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="/node_modules/semantic-ui-shape/shape.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
 
+<body id="blog">
 
+    <!-- Following Menu -->
+    <div class="ui large top fixed hidden menu">
+        <div class="ui container">
+            <a class="item" href="/">Главная</a>
+            <a class="item" href="/services">Услуги</a>
+            <a class="active item" href="/blog">Блог</a>
+            <a class="item" href="/contacts">Связаться с нами</a>
+            <div class="right menu">
+                <div class="item">
+                    <a class="ui positive button">Получить консультацию</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar Menu -->
+    <div class="ui vertical sidebar menu">
+        <a class="item" href="/">Главная</a>
+        <a class="item" href="/services">Услуги</a>
+        <a class="active item" href="/blog">Блог</a>
+        <a class="item" href="/contacts">Связаться с нами</a>
+        <a class="item">Получить консультацию</a>
+    </div>
+
+    <div class="pusher">
+        <div class="ui vertical masthead center aligned segment blog-top-header">
+            <div class="ui small header" style="font-size: 0.7em; display: none">БолитЖивот.рф, НУЗ Отделенческая клиническая больница на ст. Петрозаводск, (8142) 71-44-48, 8 911 400-43-40</div>
+
+            <div class="ui container">
+                <div class="ui large secondary pointing menu">
+                    <a class="toc item">
+                        <i class="sidebar icon"></i>
+                    </a>
+                    <a class="item" href="/">Главная</a>
+                    <a class="item" href="/services">Услуги</a>
+                    <a class="active item" href="/blog">Блог</a>
+                    <a class="item" href="/contacts">Связаться с нами</a>
+                    <div class="right item">
+                        <a class="ui basic button">Получить консультацию</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui main text container">
+                <h1 id="blog-header" class="ui header">Наш врачебный блог</h1>
+                <p id="blog-description">Сборник определений, статей, новостей, случаев из медицинской практики</p>
+            </div>
+
+        </div>
+
+        <div class="ui vertical stripe segment">
+            <div class="ui middle aligned stackable grid container">
+                <div class="row">
+                    <div class="ui text shape">
+                        <div class="sides">
+                            <div class="ui header side active">Самая настоящая</div>
+                            <div class="ui header side">правдивая информация</div>
+                            <div class="ui header side">от первого лица</div>
+                            <div class="ui header side">о лечении</div>
+                            <div class="ui header side">пищеварительной системы</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ui inverted vertical footer segment">
+            <div class="ui container">
+                <h3>Наши услуги:</h3>
+                <div class="ui stackable inverted divided equal height stackable grid">
+                    <div class="six wide column">
+                        <h4 class="ui inverted header">Эндоскопическая диагностика заболеваний пищевода, желудка, двенадцатиперстной кишки:</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">ФГДС (фиброгастродуоденоскопия) – осмотр пищевода, желудка, начального отдела двенадцатиперстной кишки;</a>
+                            <a href="#" class="item">Забор материала на гистологическое и цитологическое исследование (в т.ч. для выявления онкологической патологии) – БИОПСИЯ;</a>
+                            <a href="#" class="item">Тестирование на Helicobacter pylori (микроорганизмы вызывающие и поддерживающие развитие воспаления, в т.ч. язвенную болезнь);</a>
+                            <a href="#" class="item">Исследование кислотопродуцирующей функции желудка;</a>
+                        </div>
+                    </div>
+                    <div class="six wide column">
+                        <h4 class="ui inverted header">Эндоскопическая диагностика заболеваний толстой кишки, в т.ч. прямой кишки и анального канала:</h4>
+                        <div class="ui inverted link list">
+                            <a href="#" class="item">РРС (ректороманоскопия) – осмотр прямой кишки и анального канала с помощью короткой металлической трубки с оптическим волокном;</a>
+                            <a href="#" class="item">ФКС (фиброколоноскопия) – осмотр толстой кишки с помощью длинной гибкой трубки с оптическим волокном;</a>
+                            <a href="#" class="item">Забор материала на гистологическое и цитологическое исследование (в т.ч. для выявления онкологической патологии) – БИОПСИЯ;</a>
+                        </div>
+                        <p href="#" class="item"><h4>Вы можете получить <a href="#">телефонные</a> и <a href="#">онлайн консультации</a>, <p>а так же <a href="#">записаться на прием.</a></p></h4></p>
+                    </div>
+                    <div class="four wide column">
+                        <p class="ui inverted header">Контакты:</p>
+                        <p style="margin-bottom:0.5em">185001, Республика Карелия, город Петрозаводск</p>
+                        <p style="margin-bottom:0.5em">Первомайский проспект, дом 17</p>
+                        <p style="margin-bottom:0.5em">НУЗ Отделенческая клиническая больница на ст. Петрозаводск</p>
+                        <p class="ui inverted header">Телефоны: <p>(8142) 71-44-48, 8 911 400-43-40</p>
+                        <p class="ui inverted header">
+                            Режим работы:
+                        <p style="margin-bottom: 0">будни с 08:00 до 19:00</p>
+                        <p>сб, вс выходные</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui center aligned container">
+                <div class="ui inverted section divider"></div>
+                <img src="/img/logo.jpg" class="ui centered mini image">
+                <p>БолитЖивот.рф</p>
+                <!--<p>Все права защищены</p>-->
+            </div>
+        </div>
+    </div>
     <script src="/js/jquery.min.js"></script>
     <script src="/semantic/dist/semantic.min.js"></script>
-    <script>
-        $(document)
-                .ready(function() {
-
-                    // fix main menu to page on passing
-                    $('.main.menu').visibility({
-                        type: 'fixed'
-                    });
-                    $('.overlay').visibility({
-                        type: 'fixed',
-                        offset: 80
-                    });
-
-                    // lazy load images
-                    $('.image').visibility({
-                        type: 'image',
-                        transition: 'vertical flip in',
-                        duration: 500
-                    });
-
-                    // show dropdown on hover
-                    $('.main.menu  .ui.dropdown').dropdown({
-                        on: 'hover'
-                    });
-                });
-    </script>
-
-    <style type="text/css">
-
-        body {
-            background-color: #FFFFFF;
-        }
-        .main.container {
-            margin-top: 2em;
-        }
-
-        .main.menu {
-            margin-top: 4em;
-            border-radius: 0;
-            border: none;
-            box-shadow: none;
-            transition:
-                    box-shadow 0.5s ease,
-                    padding 0.5s ease
-        ;
-        }
-        .main.menu .item img.logo {
-            margin-right: 1.5em;
-        }
-
-        .overlay {
-            float: left;
-            margin: 0em 3em 1em 0em;
-        }
-        .overlay .menu {
-            position: relative;
-            left: 0;
-            transition: left 0.5s ease;
-        }
-
-        .main.menu.fixed {
-            background-color: #FFFFFF;
-            border: 1px solid #DDD;
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-        }
-        .overlay.fixed .menu {
-            left: 800px;
-        }
-
-        .text.container .left.floated.image {
-            margin: 2em 2em 2em -4em;
-        }
-        .text.container .right.floated.image {
-            margin: 2em -4em 2em 2em;
-        }
-
-        .ui.footer.segment {
-            margin: 5em 0em 0em;
-            padding: 5em 0em;
-        }
-    </style>
-<body>
-
-<div class="ui main text container">
-    <h1 class="ui header">Наш врачебный блог</h1>
-    <p>Сборник определений, статей, новостей, случаев из медицинской практики</p>
-</div>
-
-
-<div class="ui borderless main menu " style="">
-    <div class="ui text container">
-        <a href="/" class="header item">
-            <img class="logo" src="/img/logo.jpg">
-            БолитЖивот.рф
-        </a>
-        <a href="/blog/" class="item">Блог</a>
-        <a href="/services/" class="item">Услуги</a>
-        <a href="/contacts/" class="ui right floated dropdown item" tabindex="0">
-            Связаться с нами <i class="dropdown icon"></i>
-            <div class="menu transition hidden" tabindex="-1">
-                <div class="item">Контакты</div>
-                <div class="item">Медицинский чат</div>
-            </div>
-        </a>
-    </div>
-</div>
-
-<!-- Sidebar Menu -->
-<div class="ui vertical inverted sidebar menu">
-    <a class="active item" href="#main">Главная</a>
-    <a class="item" href="services">Услуги</a>
-    <a class="item" href="blog">Блог</a>
-    <a class="item" href="contacts">Обратная связь</a>
-    <a class="item">Войти</a>
-    <a class="item">Регистрация</a>
-</div>
-
-<div class="ui text container">
-    <h2 class="ui header">Spacing</h2>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <div class="overlay" style="">
-        <div class="ui labeled icon vertical menu">
-            <a class="item"><i class="twitter icon"></i> Tweet</a>
-            <a class="item"><i class="facebook icon"></i> Share</a>
-            <a class="item"><i class="mail icon"></i> E-mail</a>
-        </div>
-    </div>
-    <div class="overlay placeholder" style="display: none;">
-        <div class="ui labeled icon vertical menu">
-            <a class="item"><i class="twitter icon"></i> Tweet</a>
-            <a class="item"><i class="facebook icon"></i> Share</a>
-            <a class="item"><i class="mail icon"></i> E-mail</a>
-        </div>
-    </div>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <img class="ui medium left floated image transition visible" data-src="/img/fgds-rrs-fks.jpg" src="/img/fgds-rrs-fks.jpg">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-        <img class="ui medium right floated image transition visible" data-src="/img/fgds-rrs-fks.jpg" src="/img/fgds-rrs-fks.jpg">
-        Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <img class="ui medium left floated image transition visible" data-src="/img/fgds-rrs-fks.jpg" src="/img/fgds-rrs-fks.jpg">
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    Example
-    <div class="ui items">
-        <div class="item">
-            <div class="image">
-                <img src="/images/wireframe/image.png">
-            </div>
-            <div class="content">
-                <a class="header">Header</a>
-                <div class="meta">
-                    <span>Description</span>
-                </div>
-                <div class="description">
-                    <p></p>
-                </div>
-                <div class="extra">
-                    Additional Details
-                    <div class="ui right floated secondary button">
-                        Читать далее
-                        <i class="right chevron icon"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="item">
-            <div class="image">
-                <img src="/images/wireframe/image.png">
-            </div>
-            <div class="content">
-                <a class="header">Header</a>
-                <div class="meta">
-                    <span>Description</span>
-                </div>
-                <div class="description">
-                    <p></p>
-                </div>
-                <div class="extra">
-                    Additional Details
-                    <div class="ui right floated secondary button">
-                        Читать далее
-                        <i class="right chevron icon"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-        <img class="ui medium right floated image transition visible" data-src="/img/fgds-rrs-fks.jpg" src="/img/fgds-rrs-fks.jpg">
-        Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-    <div class="ui threaded comments">
-        <h3 class="ui dividing header">Comments</h3>
-        <div class="comment">
-            <a class="avatar">
-                <img src="/images/avatar/small/matt.jpg">
-            </a>
-            <div class="content">
-                <a class="author">Matt</a>
-                <div class="metadata">
-                    <span class="date">Today at 5:42PM</span>
-                </div>
-                <div class="text">
-                    How artistic!
-                </div>
-                <div class="actions">
-                    <a class="reply">Reply</a>
-                </div>
-            </div>
-        </div>
-        <div class="comment">
-            <a class="avatar">
-                <img src="/images/avatar/small/elliot.jpg">
-            </a>
-            <div class="content">
-                <a class="author">Elliot Fu</a>
-                <div class="metadata">
-                    <span class="date">Yesterday at 12:30AM</span>
-                </div>
-                <div class="text">
-                    <p>This has been very useful for my research. Thanks as well!</p>
-                </div>
-                <div class="actions">
-                    <a class="reply">Reply</a>
-                </div>
-            </div>
-            <div class="comments">
-                <div class="comment">
-                    <a class="avatar">
-                        <img src="/images/avatar/small/jenny.jpg">
-                    </a>
-                    <div class="content">
-                        <a class="author">Jenny Hess</a>
-                        <div class="metadata">
-                            <span class="date">Just now</span>
-                        </div>
-                        <div class="text">
-                            Elliot you are always so right :)
-                        </div>
-                        <div class="actions">
-                            <a class="reply">Reply</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="comment">
-            <a class="avatar">
-                <img src="/images/avatar/small/joe.jpg">
-            </a>
-            <div class="content">
-                <a class="author">Joe Henderson</a>
-                <div class="metadata">
-                    <span class="date">5 days ago</span>
-                </div>
-                <div class="text">
-                    Dude, this is awesome. Thanks so much
-                </div>
-                <div class="actions">
-                    <a class="reply">Reply</a>
-                </div>
-            </div>
-        </div>
-        <form class="ui reply form">
-            <div class="field">
-                <textarea></textarea>
-            </div>
-            <div class="ui blue labeled submit icon button">
-                <i class="icon edit"></i> Add Reply
-            </div>
-        </form>
-    </div>
-</div>
-
-
-<div class="ui inverted vertical footer segment">
-    <div class="ui center aligned container">
-        <div class="ui stackable inverted divided grid">
-            <div class="three wide column">
-                <h4 class="ui inverted header">Group 1</h4>
-                <div class="ui inverted link list">
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link One</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Two</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Three</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Four</a>
-                </div>
-            </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header">Group 2</h4>
-                <div class="ui inverted link list">
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link One</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Two</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Three</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Four</a>
-                </div>
-            </div>
-            <div class="three wide column">
-                <h4 class="ui inverted header">Group 3</h4>
-                <div class="ui inverted link list">
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link One</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Two</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Three</a>
-                    <a href="http://semantic-ui.com/examples/sticky.html#" class="item">Link Four</a>
-                </div>
-            </div>
-            <div class="seven wide column">
-                <h4 class="ui inverted header">Footer Header</h4>
-                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
-            </div>
-        </div>
-        <div class="ui inverted section divider"></div>
-        <img src="/img/logo.jpg" class="ui centered mini image">
-        <div class="ui horizontal inverted small divided link list">
-            <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Site Map</a>
-            <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Contact Us</a>
-            <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Terms and Conditions</a>
-            <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Privacy Policy</a>
-        </div>
-    </div>
-</div>
-
+    <script src="/node_modules/semantic-ui-shape/shape.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>

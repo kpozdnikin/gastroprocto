@@ -15,10 +15,32 @@ $(document)
         ;
 
         // create sidebar and attach to menu open
-        $('.ui.sidebar')
-            .sidebar('attach events', '.toc.item')
-        ;
+        $('.ui.sidebar').sidebar('attach events', '.toc.item');
 
+        //smooth scroll
+        $('a[href^="#"], a[href^="."]').click( function(){ // если в href начинается с # или ., то ловим клик
+            var scroll_el = $(this).attr('href'); // возьмем содержимое атрибута href
+            if ($(scroll_el).length != 0) { // проверим существование элемента чтобы избежать ошибки
+                var top = $(scroll_el).offset().top;
+                $('html, body').animate({ scrollTop: top}, 500); // анимируем скроолинг к элементу scroll_el
+            }
+            return false; // выключаем стандартное действие
+        });
+
+        var shape = $('.shape');
+        var fadeIn = $('#blog-header, #blog-description, .intro');
+        fadeIn.transition('fade in', '1500ms');
+
+        var timerId = setInterval(function() {
+            shape.shape('flip up');
+        }, 1500);
+
+        // lazy load images
+        $('.image').visibility({
+            type: 'image',
+            transition: 'vertical flip in',
+            duration: 500
+        });
     });
 
 /*

@@ -1,17 +1,17 @@
 //requiring NPM modeles
 var morgan = require('morgan');
 var bodyParser = require('body-parser');
-
-//var mongoose = require('mongoose');
-//var db = mongoose.connection;
+var express = require('express');
+var mongoose = require('mongoose');
+var db = mongoose.connection;
 
 var app = express();
 
-/*db.on('error', console.error);*/
+db.on('error', console.error);
 
 //requiring local modeles
 var configs = require('./config');
-//var routes = require('./routes/routes');
+var routes = require('./routes/routes');
 
 //var userModel = require('./models/users');
 
@@ -27,19 +27,15 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //connedting to mongoDB
-//mongoose.connect('mongodb://'+configs.dbHost+'/'+configs.dbName);
-//populating data if DB is not already populated.
-//helperFunctions.populateDb();
+mongoose.connect('mongodb://'+configs.dbHost+'/'+configs.dbName);
 
 //Initilizing routes.
-//routes(app);
+routes(app);
 
 // serve articles.
-app.use('/articles',express.static('articles'));
-// serve client side code.
-//app.use('/',express.static('client'));
+app.use('/api/articles', express.static('articles'));
 
 //Finally starting the listener
 app.listen(configs.applicationPort, function () {
-    console.log('Example app listening on port '+configs.applicationPort+'!');
+    console.log('Example app listening on port ' + configs.applicationPort + '!');
 });

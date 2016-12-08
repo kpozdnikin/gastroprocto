@@ -19,16 +19,12 @@
   <link rel="icon" type="image/png" href="/images/android-icon-192x192.png" sizes="192x192">
   <link rel="icon" type="image/png" href="/images/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="/images/manifest.json">
+  <!--<link rel="manifest" type="application/json" href="/images/manifest.json">-->
 
   <!-- Site Properties -->
   <title>Болит живот? Мы можем помочь!</title>
   <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
-  <script src="/js/jquery.min.js"></script>
-  <script src="semantic/dist/semantic.min.js"></script>
-  <script src="/js/script.js"></script>
 
 </head>
 <body id="main">
@@ -37,15 +33,12 @@
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
     <a class="active item" href="#main">Главная</a>
-    <a class="item" href="services">Услуги</a>
-    <a class="item" href="blog">Блог</a>
-    <a class="item" href="contacts">Обратная связь</a>
+    <a class="item" href="/services">Услуги</a>
+    <a class="item" href="/blog">Блог</a>
+    <a class="item" href="/contacts">Связаться с нами</a>
     <div class="right menu">
       <div class="item">
-        <a class="ui positive button">Войти</a>
-      </div>
-      <div class="item">
-        <a class="ui primary button">Регистрация</a>
+        <a class="ui positive button">Получить консультацию</a>
       </div>
     </div>
   </div>
@@ -54,16 +47,16 @@
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
   <a class="active item" href="#main">Главная</a>
-  <a class="item" href="services">Услуги</a>
-  <a class="item" href="blog">Блог</a>
-  <a class="item" href="contacts">Обратная связь</a>
-  <a class="item">Войти</a>
-  <a class="item">Регистрация</a>
+  <a class="item" href="/services">Услуги</a>
+  <a class="item" href="/blog">Блог</a>
+  <a class="item" href="/contacts">Связаться с нами</a>
+  <a class="item">Получить консультацию</a>
 </div>
 
 <!-- Page Contents -->
 <div class="pusher">
   <div class="ui vertical masthead center aligned segment top-header">
+    <div style="font-size: 0.7em; display: none">БолитЖивот.рф, НУЗ Отделенческая клиническая больница на ст. Петрозаводск, (8142) 71-44-48, 8 911 400-43-40</div>
 
     <div class="ui container">
       <div class="ui large secondary pointing menu">
@@ -71,17 +64,16 @@
           <i class="sidebar icon"></i>
         </a>
         <a class="active item" href="#main">Главная</a>
-        <a class="item" href="services">Услуги</a>
-        <a class="item" href="blog">Блог</a>
-        <a class="item" href="contacts">Обратная связь</a>
+        <a class="item" href="/services">Услуги</a>
+        <a class="item" href="/blog">Блог</a>
+        <a class="item" href="/contacts">Связаться с нами</a>
         <div class="right item">
-          <a class="ui basic button">Войти</a>
-          <a class="ui basic button">Регистрация</a>
+          <a class="ui basic button">Получить консультацию</a>
         </div>
       </div>
     </div>
 
-    <div class="ui text container">
+    <div class="ui text container intro">
       <h1 class="ui header">
         У вас болит живот?
       </h1>
@@ -98,12 +90,12 @@
           <h3>Что такое боль в животе:</h3>
           <p>Боль – это тревожный сигнал нашего организма. Организм может сигнализировать о временных трудностях (переедание, эмоциональное напряжение, повышенная физическая нагрузка и т.д.) и о возможном наличии заболевания.</p>
           <p>Боли в животе могут сопровождать:</p>
-          <ul>
-            <li>заболевания органов желудочно-кишечного тракта;</li>
-            <li>заболевания мочевыводящей системы;</li>
-            <li>заболевания  репродуктивной системы;</li>
-            <li>нервной системы;</li>
-            <li>системы кровообращения и др.</li>
+          <ul class="ui relaxed divided list">
+            <li class="item">заболевания органов желудочно-кишечного тракта;</li>
+            <li class="item">заболевания мочевыводящей системы;</li>
+            <li class="item">заболевания  репродуктивной системы;</li>
+            <li class="item">нервной системы;</li>
+            <li class="item">системы кровообращения и др.</li>
           </ul>
           <h3>Чем опасна боль в животе?</h3>
           <p>Если не обращать внимания на сигналы организма и заниматься самолечением, то заболевание можно запустить . Тогда борьба с ним будет долгой и трудной.</p>
@@ -115,7 +107,7 @@
       </div>
       <div class="row">
         <div class="center aligned column">
-          <a class="ui huge button" href="#help">Мы выясним причину Вашей боли <i class="angle double down icon"></i></a>
+          <a class="ui huge button positive" href="#help">Мы выясним причину Вашей боли <i class="angle double down icon"></i></a>
         </div>
       </div>
     </div>
@@ -128,7 +120,7 @@
           <h3 class="ui header">Наиболее частая причина возникновения боли в животе - </h3>
           <p>Это заболевания желудочно-кишечного тракта, для выявления которых необходимы эндоскопические методы исследования.</p>
           <p>Это методы, позволяющие осмотреть пищевод, желудок, кишечник изнутри, со стороны слизистой оболочки.</p>
-          <h4>Наиболее часто назначают:</h4>
+          <h4>Обычно назначают:</h4>
           <ul class="ui relaxed divided list">
             <li class="item">Фиброгастродуоденоскопию (ФГДС) – осмотр пищевода, желудка и начального отдела (луковицы) двенадцатиперстной кишки. <a>Подробнее...</a></li>
             <li class="item">Ректороманоскопию (РРС) – осмотр прямой кишки. <a>Подробнее...</a></li>
@@ -146,7 +138,7 @@
       <div class="row">
         <div class="center aligned column">
           <h3 style="margin-top: 1em;" class="ui header">Мы проведем консультации и назначим необходимую Вам процедуру.</h3>
-          <a class="ui huge button" href="#aboutus">Коротко о том, кто мы <i class="angle double down icon"></i></a>
+          <a class="ui huge button positive" href="#aboutus">Коротко о том, кто мы <i class="angle double down icon"></i></a>
         </div>
       </div>
     </div>
@@ -173,9 +165,9 @@
   <div class="ui vertical stripe segment">
     <div class="ui text container">
       <h3 class="ui header" id="blog">В нашем блоге мы постараемся помочь Вам полезным советом.</h3>
-      <p>Мы расскажем Вам о том, как избежать проблем со здоровьем, как быстро вылечить ваши заболевания и минимизировать их последствия для организма.</p>
+      <p>Мы расскажем Вам о том, как можно вылечить ваши заболевания и минимизировать их последствия для организма и как, по возможности, избежать проблем со здоровьем в дальнейшем</p>
       <h4 class="ui horizontal header divider">
-        <a href="#blog">Читайте наш блог</a>
+        <a href="/blog">Читайте наш блог</a>
       </h4>
     </div>
   </div>
@@ -187,7 +179,7 @@
       <div class="ui stackable inverted divided equal height stackable grid">
         <div class="six wide column">
           <h4 class="ui inverted header">Эндоскопическая диагностика заболеваний пищевода, желудка, двенадцатиперстной кишки:</h4>
-          <div class="ui inverted link list" style="font-size:1.3em;">
+          <div class="ui inverted link list">
             <a href="#" class="item">ФГДС (фиброгастродуоденоскопия) – осмотр пищевода, желудка, начального отдела двенадцатиперстной кишки;</a>
             <a href="#" class="item">Забор материала на гистологическое и цитологическое исследование (в т.ч. для выявления онкологической патологии) – БИОПСИЯ;</a>
             <a href="#" class="item">Тестирование на Helicobacter pylori (микроорганизмы вызывающие и поддерживающие развитие воспаления, в т.ч. язвенную болезнь);</a>
@@ -201,18 +193,19 @@
             <a href="#" class="item">ФКС (фиброколоноскопия) – осмотр толстой кишки с помощью длинной гибкой трубки с оптическим волокном;</a>
             <a href="#" class="item">Забор материала на гистологическое и цитологическое исследование (в т.ч. для выявления онкологической патологии) – БИОПСИЯ;</a>
           </div>
-          <a href="#" class="item"><h4>Мы проводим телефонные и онлайн консультация.</h4></a>
+          <p href="#" class="item"><h4>Вы можете получить <a href="#">телефонные</a> и <a href="#">онлайн консультации</a>, <p>а так же <a href="#">записаться на прием.</a></p></h4></p>
         </div>
         <div class="four wide column">
-          <h4 class="ui inverted header">Контакты:</h4>
+          <p class="ui inverted header">Контакты:</p>
           <p style="margin-bottom:0.5em">185001, Республика Карелия, город Петрозаводск</p>
           <p style="margin-bottom:0.5em">Первомайский проспект, дом 17</p>
           <p style="margin-bottom:0.5em">НУЗ Отделенческая клиническая больница на ст. Петрозаводск</p>
-          <p style="margin-bottom:0.5em">Телефоны: <p>(8142) 71-44-48, 8 911 400-43-40</p>
-          <h4 class="ui inverted header">Режим работы:
-            будни: с 08:00 до 19:00
-            сб, вс: выходные
-          </h4>
+          <p class="ui inverted header">Телефоны: <p>(8142) 71-44-48, 8 911 400-43-40</p>
+          <p class="ui inverted header">
+            Режим работы:
+            <p style="margin-bottom: 0">будни с 08:00 до 19:00</p>
+            <p>сб, вс выходные</p>
+          </p>
         </div>
       </div>
     </div>
@@ -220,14 +213,13 @@
     <div class="ui center aligned container">
       <div class="ui inverted section divider"></div>
       <img src="/img/logo.jpg" class="ui centered mini image">
-      <div class="ui horizontal inverted small divided link list">
-        <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Site Map</a>
-        <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Contact Us</a>
-        <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Terms and Conditions</a>
-        <a class="item" href="http://semantic-ui.com/examples/sticky.html#">Privacy Policy</a>
-      </div>
+      <p style="margin-top: 10px; margin-bottom: 5px; font-size: 1.2em">БолитЖивот.рф</p>
+      <!--<p>Все права защищены</p>-->
     </div>
   </div>
 </div>
+<script src="/js/jquery.min.js"></script>
+<script src="semantic/dist/semantic.min.js"></script>
+<script src="/js/script.js"></script>
 </body>
 </html>

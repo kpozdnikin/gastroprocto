@@ -1,53 +1,31 @@
-var Users = require('../models/users');
-var Videos = require('../models/videos');
+var Articles = require('../models/articles');
+var Cookies = require( "cookies" );
 
 var helpers = {};
 
 //Function that checks if the request is authenticated or not.
 helpers.isAuthenticated = function(req, res, next){
+	var cookies = new Cookies( req, res );
 
-	if(!req.query.sessionId){
+	var user = cookies.get( "user_auth" );
+
+	if(!user){
 		res.status(401);
-		res.send({status:'error',error:'Not Authorized.'});
+		res.send({ status:'error', error:'Not Authorized.' });
 	}
 	else{
-		var user = Users.getBySessionId(req.query.sessionId);	
-		user.then(function(dbuser){
-			if(dbuser){
+		/*var user = user.getBySessionId(req.query.sessionId);
+		user.then(function(dbUser){
+			if(dbUser){
 				next();
-			}else{
+			}
+			else{
 				res.status(401);
-				res.send({status:'error',error:'Not Authorized.'});		
+				res.send({status:'error', error:'Not Authorized.'});
 			}	
-		});
-		
+		});*/
+		next();
 	}
-}
-
-//Function to populate data in DB if DB is empty.
-helpers.populateDb = function(){
-	var promise = Users.get();
-	promise.then(function(data){
-		if(data.length){
-			console.log('Users table already populated.');
-		}
-		else{
-			console.log('Populating users table.');
-			Users.seed();	
-		}
-	});
-
-	var promise2 = Videos.get();
-	promise2.then(function(data){
-		
-		if(data.length){
-			console.log('videos table already populated.');
-		}
-		else{
-			console.log('Populating videos table.');
-			Videos.seed();	
-		}
-	});
-}
+};
 
 module.exports = helpers;
